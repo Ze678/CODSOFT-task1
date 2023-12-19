@@ -1,11 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@hintergrund: #000000;
+@schriftfarbe: #FFFFFF;
+
+
+body{
+    /* background-color: @hintergrund;
+    -webkit-font-smoothing: anitialiased; */
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+.social{
+    width: 350px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.so-icon{
+    color: #fff;
+}
+
+ul.so-icon{
+    margin-top: 100px;
+}
+
+.so-icon li{
+    vertical-align: left;
+}
+
+.so-icon a{
+    /* color: #schriftfarbe; */
+    text-decoration: none;
+}
+
+.fa-facebook{
+    padding: 10px 14px 7px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    /* .moz-transition: .5s; */
+    -webkit-transition: .5s;
+    transition: 5s;
+    /* background-color: @hintergrund; */
+}
+
+.fa-facebook:hover{
+    background-color: #3D5B99;
+
+}
+
+.fa-whatsapp{
+    padding: 10px 14px 7px 14px;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    /* .moz-transition: .5s; */
+    -webkit-transition: .5s;
+    transition: 5s;
+    /* background-color: @hintergrund; */
+}
+
+.fa-whatsapp:hover{
+    background-color: lightgreen;
+}
+
+
+
+.sticky{
+   position: sticky;
+   z-index: 1;
+   height: 800px;
+   transition: all .3s ease-in-out;
+   top: 10vh;
+   padding: 2em;
+   background-color: white;
+   border-radius: 5px 5px;
+
+}
+
+.sticky:hover{
+    transform: scale(1.02) rotate(0deg) translate(0px);
+}
+
+
+
+
 /*CSS grid layout*/
 .abt{
     display: grid;
-    /* place-items: center; */
     text-align: left;
     height: 20vh;
     width: 40vh;
-    margin-top: 400px;
+    margin-top: 200px;
+    margin-bottom: 400px;
 }
 
 
@@ -16,6 +115,8 @@
     border: 1px solid black;
     margin-left: 250px;
     font-size: 20px;
+    /* margin-top: 200px; */
+    margin-bottom: 200px;
 }
 
 .flex_abt{
@@ -28,7 +129,8 @@
     margin-left: 130px;
     height: 40vh;
     width: 50vh;
-    margin-top: 400px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 
 }
 
