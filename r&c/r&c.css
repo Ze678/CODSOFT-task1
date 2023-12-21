@@ -1,13 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+}
+
 .first{
 
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 .nav-bar{
     list-style-type: none;
     display: flex;
     gap: 20px;
-    margin-left: 1000px;
 }
+/* .li:hover::after{
+    width: 100%;
+    left: 0;
+} */
+
+li:hover{
+    border-bottom: 2px solid greenyellow;
+    transition: all ease-in-out .2s;
+}
+
+.link::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    bottom: 0;
+    background: greenyellow;
+    transition: width .2s;
+}
+
+.link:hover::after{
+    border-bottom: 3px solid greenyellow;
+    width: 100%;
+}
+
+
+/* .wrapper{
+    margin-bottom: 800px;
+} */
 
 h1{
     margin-left: 100px;
@@ -15,6 +52,28 @@ h1{
     font-size: 100px;
 }
 
+.sticky{
+    position: sticky;
+    z-index: 1;
+    height: 800px;
+    transition: all .3s ease-in-out;
+    top: 1vh;
+    padding: 2em;
+
+    /* opacity: 1.5; */
+    background-size: cover;
+    border-radius: 5px 5px;
+    background-image: url(https://img.freepik.com/premium-photo/bay-leaf-black-pepper-black-background-condiments-flat-view-space-text_350891-622.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703030400&semt=ais);
+    background-blend-mode: darken;
+    filter: brightness(70%);
+    -webkit-filter: brightness(100%);
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.sticky:hover{
+    transform: scale(1.02) rotate(0deg) translate(0px);
+}
 
 .img-grid{
     display: grid;
